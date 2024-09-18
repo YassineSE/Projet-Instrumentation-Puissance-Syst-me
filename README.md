@@ -1,2 +1,2 @@
-# Projet-Instrumentation-Puissance-Syst-me
+# Projet-Instrumentation-Puissance-Système
 Asservissement de Température d’une résistance chauffante via une thermistance.
