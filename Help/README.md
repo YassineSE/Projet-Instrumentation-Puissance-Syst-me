@@ -66,5 +66,5 @@ et finalement:
 Dès que votre travail est validé par les autres: 
 ```sh
     git branch -M main
-    git merge dev
+    git merge origin/dev
 ```
