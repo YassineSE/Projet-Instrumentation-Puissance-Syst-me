@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.14">
   <diagram name="Page-1" id="dh3LGG3NhCW_xeNjPK3h">
-    <mxGraphModel dx="1740" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1877" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -74,10 +74,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="24buo-x02MxYgmnAGaRl-30" value="&lt;div&gt;Micro contrôleur&lt;/div&gt;(STM 32)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="24buo-x02MxYgmnAGaRl-30" value="&lt;div&gt;Micro contrôleur&lt;/div&gt;(STM 32)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="81" y="552" width="140" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="24buo-x02MxYgmnAGaRl-31" value="Pilote de la puissance (Hacheur)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="24buo-x02MxYgmnAGaRl-31" value="Pilote de la puissance (Hacheur)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="311" y="500" width="140" height="55" as="geometry" />
         </mxCell>
         <mxCell id="24buo-x02MxYgmnAGaRl-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="24buo-x02MxYgmnAGaRl-30" target="24buo-x02MxYgmnAGaRl-31" edge="1">
@@ -86,7 +86,7 @@
             <mxPoint x="311" y="580" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="24buo-x02MxYgmnAGaRl-34" value="Alimentaion" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+        <mxCell id="24buo-x02MxYgmnAGaRl-34" value="Alimentaion" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="211" y="420" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="24buo-x02MxYgmnAGaRl-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="24buo-x02MxYgmnAGaRl-34" edge="1">
@@ -110,10 +110,10 @@
         <mxCell id="24buo-x02MxYgmnAGaRl-38" value="5V DC" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="150" y="428" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="24buo-x02MxYgmnAGaRl-40" value="30V DC" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="24buo-x02MxYgmnAGaRl-40" value="12V DC" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="321" y="428" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="24buo-x02MxYgmnAGaRl-41" value="Resistance&lt;div&gt;(DBK HP03-1/04-24)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="24buo-x02MxYgmnAGaRl-41" value="Resistance&lt;div&gt;(DBK HP03-1/04-24)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="541" y="552" width="140" height="55" as="geometry" />
         </mxCell>
         <mxCell id="24buo-x02MxYgmnAGaRl-42" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="24buo-x02MxYgmnAGaRl-31" target="24buo-x02MxYgmnAGaRl-41" edge="1">
@@ -122,7 +122,7 @@
             <mxPoint x="321" y="590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="24buo-x02MxYgmnAGaRl-43" value="Thermistance&lt;div&gt;(EPCOS B57045K473K)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="24buo-x02MxYgmnAGaRl-43" value="Thermistance&lt;div&gt;(EPCOS B57045K473K)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="541" y="666" width="140" height="55" as="geometry" />
         </mxCell>
         <mxCell id="24buo-x02MxYgmnAGaRl-44" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="24buo-x02MxYgmnAGaRl-41" target="24buo-x02MxYgmnAGaRl-43" edge="1">
@@ -158,7 +158,7 @@
             <mxPoint x="820" y="580" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="24buo-x02MxYgmnAGaRl-53" value="IHM" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="24buo-x02MxYgmnAGaRl-53" value="IHM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="-160" y="552" width="140" height="55" as="geometry" />
         </mxCell>
         <mxCell id="24buo-x02MxYgmnAGaRl-55" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;puissance&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;contrôlée&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
@@ -173,7 +173,7 @@
         <mxCell id="24buo-x02MxYgmnAGaRl-58" value="Chaleur générée (C°)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="689" y="549" width="119" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="j397GbN3DCBoylSU_5wh-1" value="Transistor(système ON/OFF)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="j397GbN3DCBoylSU_5wh-1" value="Transistor(système ON/OFF)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="311.5" y="594" width="139" height="50" as="geometry" />
         </mxCell>
         <mxCell id="j397GbN3DCBoylSU_5wh-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="24buo-x02MxYgmnAGaRl-30" target="j397GbN3DCBoylSU_5wh-1">
