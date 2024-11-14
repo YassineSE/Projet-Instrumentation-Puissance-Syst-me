@@ -7,45 +7,57 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-
-<div class="container">
-    <div class="status">En cours</div>
-    
-    <!-- Seven-Segment Display for Temperature -->
-    <div id="clock-container">
-        <div id="display-1" class="display-container display-size-12 display-no-2">
-            <div class="segment segment-a"></div>
-            <div class="segment segment-b"></div>
-            <div class="segment segment-c"></div>
-            <div class="segment segment-d"></div>
-            <div class="segment segment-e"></div>
-            <div class="segment segment-f"></div>
-            <div class="segment segment-g"></div>
+<div class="big_container">
+    <div class="small_container">
+        <div class="status">En cours</div>
+        
+        <!-- Seven-Segment Display for Temperature -->
+        <div id="clock-container">
+            <div id="display-1" class="display-container display-size-12 display-no-2">
+                <div class="segment segment-a"></div>
+                <div class="segment segment-b"></div>
+                <div class="segment segment-c"></div>
+                <div class="segment segment-d"></div>
+                <div class="segment segment-e"></div>
+                <div class="segment segment-f"></div>
+                <div class="segment segment-g"></div>
+            </div>
+            <div id="display-2" class="display-container display-size-12 display-no-8">
+                <div class="segment segment-a"></div>
+                <div class="segment segment-b"></div>
+                <div class="segment segment-c"></div>
+                <div class="segment segment-d"></div>
+                <div class="segment segment-e"></div>
+                <div class="segment segment-f"></div>
+                <div class="segment segment-g"></div>
+            </div>
         </div>
-        <div id="display-2" class="display-container display-size-12 display-no-8">
-            <div class="segment segment-a"></div>
-            <div class="segment segment-b"></div>
-            <div class="segment segment-c"></div>
-            <div class="segment segment-d"></div>
-            <div class="segment segment-e"></div>
-            <div class="segment segment-f"></div>
-            <div class="segment segment-g"></div>
-        </div>
-    </div>
 
-    <!-- Control Inputs -->
-    <div class="set-temp">
-        <label for="set-temp">Set:</label>
-        <input type="number" id="set-temp" placeholder="28">
+        <!-- Control Inputs -->
+         <div class="temp">
+            <div class="temp-sou">
+                <p>"Température souhaitée"</p>
+            </div>
+            <div class="set-temp">
+                <label for="set-temp">Set:</label>
+                <input type="number" id="set-temp" placeholder="28">
+            </div>
+        </div>
+        <div class="mode">
+            <span>Mode: Chauffage</span>
+        </div>
     </div>
     <div class="controls">
+        <button class="button-28">28</button>
+        <button class="button-start">start</button>
+        <button class="button-stop">stop</button>
+        <button class="button-historique">historique</button>
         <button class="button decrease">-</button>
         <button class="button increase">+</button>
     </div>
-    <div class="mode">
-        <span>Mode: Chauffage</span>
-    </div>
 </div>
+<!-- Link to the JavaScript file -->
+<script src="js.js"></script>
 
 </body>
 </html>

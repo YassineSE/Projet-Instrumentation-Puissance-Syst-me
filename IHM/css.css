@@ -8,18 +8,40 @@ body {
     background-color: #ababab;
 }
 
-.container {
+.big_container {
     border: 2px solid #333;
     border-radius: 10px;
     padding: 20px;
-    width: 1500px;
+    
+    width: 1300px;
+    height: 700px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #c4c4c4;
+}
+.small_container {
+    margin: 0 auto;
+    margin-top: 0 ;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 0px;
+    width: 1300px;
+    height: 500px;
+    text-align: center;
+    background-color: #000000;
 }
 
 .status {
     font-size: 20px;
     color: #888;
+}
+
+.temp {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 40px;
+    /*margin: 20px 0;
+    width: 100%;*/
 }
 
 .set-temp {
@@ -39,8 +61,10 @@ body {
 .controls {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
+    margin-top: 50px;
+    gap: 40px;
+    /*margin: 20px 0;
+    width: 100%;*/
 }
 
 .button {
@@ -49,14 +73,84 @@ body {
     font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
+    
 }
 
 .button:active {
     background-color: #ddd;
 }
 
-.increase { background-color: #4CAF50; color: white; }
-.decrease { background-color: #f44336; color: white; }
+.button-28 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Coins légèrement arrondis */
+    cursor: pointer;
+    width: 200px;
+    height: 80px;
+}
+
+.button-start {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Coins légèrement arrondis */
+    cursor: pointer;
+    width: 200px;
+    height: 80px;
+}
+
+.button-stop {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Coins légèrement arrondis */
+    cursor: pointer;
+    width: 200px;
+    height: 80px;
+}
+
+.button-historique {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Coins légèrement arrondis */
+    cursor: pointer;
+    width: 200px;
+    height: 80px;
+}
+
+.increase { 
+    background-color: #4CAF50;
+    color: white; 
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.decrease { 
+    background-color: #f44336;
+    color: white; 
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
 
 .mode {
     font-size: 18px;
@@ -68,20 +162,21 @@ body {
 #clock-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
     margin-bottom: 20px;
+    margin-top: 55px;
 }
 
 .display-container {
     position: relative;
-    width: 60px;
-    height: 120px;
-    background-color: #ffffff;
+    width: 120px;
+    height: 240px;
+    background-color: #000000;
 }
 
 .segment {
     position: absolute;
-    background-color: #000;
+    background-color: #f59300;
     opacity: 1; /* Set default opacity to make the segments look "off" */
     transition: opacity 0.3s;
 }
@@ -89,34 +184,34 @@ body {
 /* Define each segment's position and dimensions */
 .segment-a, .segment-d, .segment-g {
     width: 70%;
-    height: 10px;
+    height: 15px;
     left: 15%;
 }
 
 .segment-a { top: 5px; }
 .segment-d { bottom: 5px; }
-.segment-g { top: 55px; }
+.segment-g { top: 113px; }
 
 .segment-b, .segment-c, .segment-e, .segment-f {
-    width: 10px;
-    height: 40px;
+    width: 15px;
+    height: 90px;
 }
 
-.segment-b { top: 15px; right: 0px; }
-.segment-c { bottom: 15px; right: 0px; }
-.segment-e { bottom: 15px; left: 0px; }
-.segment-f { top: 15px; left: 0px; }
+.segment-b { top: 20px; right: -5px; }
+.segment-c { bottom: 20px; right: -5px; }
+.segment-e { bottom: 20px; left: -5px; }
+.segment-f { top: 20px; left: -5px; }
 
 /* Display numbers by setting opacity */
 .display-no-0 .segment-g,
-.display-no-1 .segment-a, .display-no-1 .segment-d, .display-no-1 .segment-e, .display-no-1 .segment-f,
+.display-no-1 .segment-a, .display-no-1 .segment-d, .display-no-1 .segment-e, .display-no-1 .segment-f, .display-no-1 .segment-g,
 .display-no-2 .segment-c, .display-no-2 .segment-f,
 .display-no-3 .segment-e, .display-no-3 .segment-f,
 .display-no-4 .segment-a, .display-no-4 .segment-d, .display-no-4 .segment-e,
 .display-no-5 .segment-b, .display-no-5 .segment-e,
 .display-no-6 .segment-b,
 .display-no-7 .segment-d, .display-no-7 .segment-e, .display-no-7 .segment-f, .display-no-7 .segment-g,
-.display-no-8,
+/*.display-no-8 ,*/ 
 .display-no-9 .segment-e {
-    opacity: 1; /* Light up the segments needed for each number */
+    opacity: 0.1; /* Light up the segments needed for each number */
 }
