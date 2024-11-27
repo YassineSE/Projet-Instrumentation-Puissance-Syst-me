@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+        "section1 section2"
+        "section3 section4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#section1 { grid-area: section1; background-color: #f9f9f9; }
+#section2 { grid-area: section2; background-color: #e9f7ef; }
+#section3 { grid-area: section3; background-color: #fce4ec; }
+#section4 { grid-area: section4; background-color: #ede7f6; }
+
+/* Texte en haut */
+.section h1, .section h2 {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Partie 1 et 2 : alignement */
+#section1 .value, #section2 .value {
+    font-size: 2rem;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* Partie 3 : Boutons agrandis */
+#section3 {
+    flex-direction: column;
+    gap: 15px;
+}
+
+#section3 button {
+    font-size: 40px; /* Agrandit le texte */
+    border-radius: 20px; /* Coins plus arrondis */
+    padding: 10px; /* Ajout d'espacement interne */
+    height: 150px;
+    width: 300px;
+}
+
+
+/* Partie 4 : Sliders */
+#section4 .slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    width: 90%;
+}
+
+#desired-temp-slider {
+    height: 20px; /* Épaisseur du slider */
+    border-radius: 5px; /* Coins arrondis pour le slider */
+}
+
+
+#section4 input[type="range"] {
+    width: 70%;
+}
+
+#section4 label {
+    font-size: 14px;
+}
+
+#section4 .slider-container.large input[type="range"] {
+    width: 100%;
+}
+
+#section4 .slider-container.large label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Petits écrans */
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "section1"
+            "section2"
+            "section3"
+            "section4";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #section3 button {
+        width: 80%;
+    }
+}
