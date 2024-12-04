@@ -6,6 +6,8 @@
     <title>Interface Température</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script> <!-- Use `defer` to ensure DOM is loaded -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 <body>
     <!-- Section 1 -->
@@ -23,6 +25,7 @@
     <!-- Section 3 -->
     <div id="section3" class="section">
         <button id="start-btn">Démarrer</button>
+        <button id="open-graph-btn">Afficher le graphique</button>
     </div>
 
     <!-- Section 4 -->
@@ -46,6 +49,14 @@
             <label for="kd-slider">Kd</label>
             <input type="range" id="kd-slider" min="0" max="10" value="0">
             <div id="desired-kd-value">0</div>
+        </div>
+    </div>
+
+    <!-- Pop-up (Modal) -->
+    <div id="graph-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span id="close-modal-btn" class="close-btn">&times;</span>
+            <canvas id="tempChart"></canvas>
         </div>
     </div>
 

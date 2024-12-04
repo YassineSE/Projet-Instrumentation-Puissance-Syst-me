@@ -8,8 +8,12 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 100vh;
-}
 
+    background-image: url('BG.jpg'); /* Assure-toi que l'image s'appelle bien BG.jpg et se trouve dans le même dossier */
+    background-size: cover; /* L'image va couvrir tout l'écran */
+    background-position: center; /* L'image sera centrée */
+    background-attachment: fixed; /* L'image restera fixe lorsque l'utilisateur défile */
+}
 
 
 .section {
@@ -22,10 +26,26 @@ body {
     padding: 20px;
 }
 
-#section1 { grid-area: section1; background-color: #f9f9f9; }
-#section2 { grid-area: section2; background-color: #e9f7ef; }
-#section3 { grid-area: section3; background-color: #fce4ec; }
-#section4 { grid-area: section4; background-color: #ede7f6; }
+#section1 {
+    grid-area: section1;
+    background-color: transparent;  /* Fond transparent */
+    backdrop-filter: blur(4px);     /* Flou d'arrière-plan */
+}
+#section2 {
+    grid-area: section2;
+    background-color: transparent;  /* Fond transparent */
+    backdrop-filter: blur(4px);     /* Flou d'arrière-plan */
+}
+#section3 {
+    grid-area: section3;
+    background-color: transparent;  /* Fond transparent */
+    backdrop-filter: blur(4px);     /* Flou d'arrière-plan */
+}
+#section4 {
+    grid-area: section4;
+    background-color: transparent;  /* Fond transparent */
+    backdrop-filter: blur(5px);     /* Flou d'arrière-plan */
+}
 
 /* Texte en haut */
 .section h1, .section h2 {
@@ -45,17 +65,32 @@ body {
 
 /* Partie 3 : Boutons agrandis */
 #section3 {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction:row;
+    gap: 50px;
 }
 
+
 #section3 button {
-    font-size: 40px; /* Agrandit le texte */
-    border-radius: 20px; /* Coins plus arrondis */
-    padding: 10px; /* Ajout d'espacement interne */
-    height: 150px;
-    width: 300px;
+   background-color: rgba(0, 0, 0, 0.1); /* Transparent avec un léger gris */
+   color: #292929; /* Texte blanc */
+   backdrop-filter: blur(10px);     /* Flou d'arrière-plan */
+
+   font-size: 40px; /* Agrandit le texte */
+   border-radius: 20px; /* Coins plus arrondis */
+   padding: 10px; /* Ajout d'espacement interne */
+   height: 150px;
+   width: 300px;
+
+   cursor: pointer; /* Curseur pour indiquer que c'est un bouton cliquable */
+   transition: background-color 0.3s ease, border-color 0.3s ease; /* Animation fluide */
 }
+
+
+#section3 button:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Un peu plus foncé au survol */
+    border-color: rgba(255, 255, 255, 0.8); /* Bordure plus visible au survol */
+}
+
 
 
 /* Partie 4 : Sliders */
@@ -105,4 +140,45 @@ body {
     #section3 button {
         width: 80%;
     }
+}
+
+/* Style du modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenu du modal */
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.8);  /* Fond blanc semi-transparent */
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 900px;
+    backdrop-filter: blur(10px);  /* Effet de flou sur le fond derrière le modal */
+}
+
+
+/* Bouton de fermeture */
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
