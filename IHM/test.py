@@ -2,7 +2,7 @@ import serial
 import time
 
 try:
-    ser = serial.Serial('COM4', 115200)  # Remplacer COM4 par le bon numéro de port
+    ser = serial.Serial('/dev/ttyACM0', 115200)  # Remplacer COM4 par le bon numéro de port
 
     time.sleep(2)  # Attendre que la connexion se stabilise
 
